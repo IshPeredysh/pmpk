@@ -2,4 +2,5 @@
 *.exe
 *.map
 *.tds
+config.ini
 __history/
