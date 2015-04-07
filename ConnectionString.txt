@@ -1,0 +1,10 @@
+Persist Security Info=True;Extended Properties="Driver={Firebird/InterBase(r) driver};Dbname=D:\sas\PMPK\DBase\DB.FDB;CHARSET=WIN1251;PWD=masterkey;UID=sysdba;Client=D:\srv\FireBird\bin\gds32.dll;"
+Persist Security Info=True;Extended Properties="Dbname=D:\sas\PMPK\DBase\DB.FDB;CHARSET=WIN1251;PWD=masterkey;UID=sysdba;Client=D:\srv\FireBird\bin\gds32.dll;"
+Provider=MSDASQL.1;Password=masterkey;Persist Security Info=True;User ID=sysdba;Data Source=PMPK;Extended Properties="DSN=PMPK;Driver=Firebird/InterBase(r) driver;Dbname=D:\sas\PMPK\DBase\DB.FDB;CHARSET=WIN1251;PWD=masterkey;UID=sysdba;Client=gds32.dll;"
+User=SYSDBA;Password=masterkey;Database=D:\sas\PMPK\DBase\DB.FDB;DataSource=sas;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=15;Pooling=true;MinPoolSize=0;MaxPoolSize=50;Packet Size=8192;ServerType=0;
+
+Dbname=D:\sas\PMPK\DBase\DB.FDB;
+CHARSET=WIN1251;
+PWD=masterkey;
+UID=sysdba;
+Client=D:\srv\FireBird\bin\gds32.dll;

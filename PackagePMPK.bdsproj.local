@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013.06.28 09:36:12.994.bdsproj,C:\Documents and Settings\sas\Мои документы\Borland Studio Projects\Package1.bdsproj=C:\Documents and Settings\sas\Мои документы\Borland Studio Projects\PackagePMPK.bdsproj</Transaction>
+    <Transaction>2013.06.28 09:38:36.179.bdsproj,C:\Documents and Settings\sas\Мои документы\Borland Studio Projects\PackagePMPK.bdsproj=D:\sas\PMPK\Client3\PackagePMPK.bdsproj</Transaction>
+    <Transaction>2013.08.16 02:18:24.515.cpp,F:\code\PMPK\Client3\Unit1.cpp=F:\code\PMPK\Client3\ISpecField.cpp</Transaction>
+    <Transaction>2013.08.16 02:18:24.515.h,F:\code\PMPK\Client3\Unit1.h=F:\code\PMPK\Client3\ISpecField.h</Transaction>
+    <Transaction>2013.11.05 11:43:43.133.cpp,D:\sas\PMPK\Client5\Unit1.cpp=D:\sas\PMPK\Client5\TModofySpec.cpp</Transaction>
+    <Transaction>2013.11.05 11:43:43.133.h,D:\sas\PMPK\Client5\Unit1.h=D:\sas\PMPK\Client5\TModofySpec.h</Transaction>
+    <Transaction>2013.11.05 12:02:16.817.cpp,D:\sas\PMPK\Client5\Unit1.cpp=D:\sas\PMPK\Client5\TModifySpec.cpp</Transaction>
+    <Transaction>2013.11.05 12:02:16.817.h,D:\sas\PMPK\Client5\Unit1.h=D:\sas\PMPK\Client5\TModifySpec.h</Transaction>
+    <Transaction>2013.11.05 12:09:28.351.cpp,D:\sas\PMPK\Client5\Unit1.cpp=D:\sas\PMPK\Client5\TSpec.cpp</Transaction>
+    <Transaction>2013.11.05 12:09:28.351.h,D:\sas\PMPK\Client5\Unit1.h=D:\sas\PMPK\Client5\TSpec.h</Transaction>
+    <Transaction>2013.11.05 17:34:20.253.cpp,D:\sas\PMPK\Client5\TModifySpec.cpp=</Transaction>
+    <Transaction>2013.11.05 17:34:25.644.cpp,D:\sas\PMPK\Client5\TSpec.cpp=</Transaction>
+    <Transaction>2013.11.06 11:39:42.491.cpp,D:\sas\PMPK\Client5\TDrawGridSpec.cpp=</Transaction>
+    <Transaction>2013.12.09 16:50:25.176.cpp,D:\sas\PMPK\Client5\Unit1.cpp=D:\sas\PMPK\Client5\TAnchor.cpp</Transaction>
+    <Transaction>2013.12.09 16:50:25.176.h,D:\sas\PMPK\Client5\Unit1.h=D:\sas\PMPK\Client5\TAnchor.h</Transaction>
+    <Transaction>2013.12.09 16:59:20.218.cpp,D:\sas\PMPK\Client5\TAnchor.cpp=</Transaction>
+    <Transaction>2013.12.09 17:08:02.555.cpp,D:\sas\PMPK\Client5\TAttrAppoint.cpp=</Transaction>
+    <Transaction>2015.02.08 20:24:40.693.cpp,F:\code\PMPK2\Client6Font\Unit1.cpp=F:\code\PMPK2\Client6Font\TPanelSpec.cpp</Transaction>
+    <Transaction>2015.02.08 20:24:40.693.h,F:\code\PMPK2\Client6Font\Unit1.h=F:\code\PMPK2\Client6Font\TPanelSpec.h</Transaction>
+    <Transaction>2015.02.08 20:25:05.041.cpp,F:\code\PMPK2\Client6Font\TPanelSpec.cpp=</Transaction>
+  </Transactions>
+</BorlandProject>
