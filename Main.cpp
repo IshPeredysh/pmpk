@@ -512,6 +512,7 @@ void __fastcall TMainForm::N18Click(TObject *Sender)
 		return;
 	}
 	ChangeFont(FontDialog1->Font);
+	//test
 }
 //---------------------------------------------------------------------------
 
