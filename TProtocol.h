@@ -13,7 +13,7 @@ class TProtocol
 	private:
 		int FIDDoc;
 		int FDocNo;
-		TDateTime FDate;
+		TDate FDate;
 		int FChildID;
 		int FClosed;
 		int FAppointmentID;

@@ -104,7 +104,7 @@ void TProtocol::LoadFromBD(TADOQuery *q)
 {
 	this->FIDDoc = q->FieldByName("iddoc")->AsInteger;
 	this->FChildID = q->FieldByName("childid")->AsInteger;
-	this->FDate = q->FieldByName("FDATE")->AsString.Trim();
+	this->FDate = q->FieldByName("FDATE")->AsDateTime;
 	this->FDocNo = q->FieldByName("DOCNO")->AsInteger;
 	this->FClosed = q->FieldByName("Closed")->AsInteger;
 	this->FAppointmentID = q->FieldByName("AppointmentID")->AsInteger;

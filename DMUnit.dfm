@@ -4,10 +4,11 @@ object DM: TDM
   Width = 1039
   object ADOConnection1: TADOConnection
     ConnectionString = 
-      'Provider=MSDASQL.1;Password=masterkey;Persist Security Info=True' +
-      ';User ID=sysdba;Data Source=PMPK;Initial Catalog=PMPK'
+      'Provider=SQLOLEDB.1;Password=afrp324b;Persist Security Info=True' +
+      ';User ID=sa;Initial Catalog=pmpk;Data Source=DESKTOP-AKQN7JJ\SQL' +
+      'EXPRESS'
     LoginPrompt = False
-    Provider = 'MSDASQL.1'
+    Provider = 'SQLOLEDB.1'
     Left = 80
     Top = 16
   end

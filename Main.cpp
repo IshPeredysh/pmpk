@@ -128,9 +128,10 @@ void __fastcall TMainForm::FormShow(TObject *Sender)
 	try {
 		FileNameDB = LoadDBaseStringINI();
 		DM->ADOConnection1->Connected = false;
-		ConnectionString = "Persist Security Info=True;Extended Properties=\"Driver=Firebird/InterBase(r) driver;Dbname=" +
-				FileNameDB + ";CHARSET=WIN1251;PWD=masterkey;UID=sysdba;Client=gds32.dll;\"";
-		DM->ADOConnection1->ConnectionString = ConnectionString;
+		//ConnectionString = "Provider=SQLOLEDB.1;Password=afrp324b;Persist Security Info=True;User ID=sa;Initial Catalog=pmpk;Data Source=DESKTOP-AKQN7JJ\SQLEXPRESS";
+		/*ConnectionString = "Persist Security Info=True;Extended Properties=\"Driver=Firebird/InterBase(r) driver;Dbname=" +
+				FileNameDB + ";CHARSET=WIN1251;PWD=masterkey;UID=sysdba;Client=gds32.dll;\""; */
+		//DM->ADOConnection1->ConnectionString = ConnectionString;
 		DM->ADOConnection1->Connected = true;
 	} catch (...) {
 		ProgressForm->CanClose = true;
