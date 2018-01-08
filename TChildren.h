@@ -34,6 +34,7 @@ class TChildren: public TTreeBase
 		void SetAdress(String Value);
 		void SetHistory(String Value);
 		void SetExtInfo(String Value);
+		void InitChildren();
 	public:
 		int DeleteFromDB();
 		void SetModifiedAdress();

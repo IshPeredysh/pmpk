@@ -3,12 +3,13 @@ object DM: TDM
   Height = 1313
   Width = 1039
   object ADOConnection1: TADOConnection
+    Connected = True
     ConnectionString = 
-      'Provider=SQLOLEDB.1;Password=afrp324b;Persist Security Info=True' +
-      ';User ID=sa;Initial Catalog=pmpk;Data Source=DESKTOP-AKQN7JJ\SQL' +
-      'EXPRESS'
+      'Provider=SQLNCLI11.1;Persist Security Info=True;User ID=sa;Passw' +
+      'ord=sa; Initial Catalog=pmpk;Data Source=DESKTOP-AKQN7JJ\SQLEXPR' +
+      'ESS'
     LoginPrompt = False
-    Provider = 'SQLOLEDB.1'
+    Provider = 'SQLNCLI11.1'
     Left = 80
     Top = 16
   end
@@ -1593,13 +1594,14 @@ object DM: TDM
         Name = 'DESCR'
         Attributes = [paNullable]
         DataType = ftString
-        Precision = 100
+        NumericScale = 255
+        Precision = 255
         Size = 100
         Value = Null
       end
       item
         Name = 'ISFOLDER'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1609,37 +1611,41 @@ object DM: TDM
         Name = 'ISMARK'
         Attributes = [paNullable]
         DataType = ftString
-        Precision = 1
+        NumericScale = 255
+        Precision = 255
         Size = 1
         Value = Null
       end
       item
-        Name = 'Adress'
+        Name = 'ADRESS'
         Attributes = [paNullable]
         DataType = ftString
+        NumericScale = 255
         Precision = 255
         Size = 255
         Value = Null
       end
       item
-        Name = 'History'
+        Name = 'HISTORY'
         Attributes = [paNullable, paLong]
-        DataType = ftVarBytes
+        DataType = ftString
+        NumericScale = 255
         Precision = 255
         Size = 2147483647
         Value = Null
       end
       item
-        Name = 'ExtInfo'
+        Name = 'EXTINFO'
         Attributes = [paNullable, paLong]
-        DataType = ftVarBytes
+        DataType = ftString
+        NumericScale = 255
         Precision = 255
         Size = 2147483647
         Value = Null
       end
       item
         Name = 'VERSTAMP'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1647,7 +1653,7 @@ object DM: TDM
       end
       item
         Name = 'PLACESTUDY'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1655,7 +1661,7 @@ object DM: TDM
       end
       item
         Name = 'FATHER'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1663,7 +1669,7 @@ object DM: TDM
       end
       item
         Name = 'MOTHER'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1671,7 +1677,7 @@ object DM: TDM
       end
       item
         Name = 'AREA'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1679,7 +1685,7 @@ object DM: TDM
       end
       item
         Name = 'SP133'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1687,6 +1693,7 @@ object DM: TDM
       end
       item
         Name = 'PARENTID'
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1702,7 +1709,7 @@ object DM: TDM
       end
       item
         Name = 'SEX'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1710,6 +1717,7 @@ object DM: TDM
       end
       item
         Name = 'ID'
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1754,13 +1762,14 @@ object DM: TDM
         Name = 'DESCR'
         Attributes = [paNullable]
         DataType = ftString
-        Precision = 100
+        NumericScale = 255
+        Precision = 255
         Size = 100
         Value = Null
       end
       item
         Name = 'ISFOLDER'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1770,7 +1779,8 @@ object DM: TDM
         Name = 'ISMARK'
         Attributes = [paNullable]
         DataType = ftString
-        Precision = 1
+        NumericScale = 255
+        Precision = 255
         Size = 1
         Value = Null
       end
@@ -1778,6 +1788,7 @@ object DM: TDM
         Name = 'ADRESS'
         Attributes = [paNullable]
         DataType = ftString
+        NumericScale = 255
         Precision = 255
         Size = 255
         Value = Null
@@ -1785,7 +1796,8 @@ object DM: TDM
       item
         Name = 'HISTORY'
         Attributes = [paNullable, paLong]
-        DataType = ftVarBytes
+        DataType = ftString
+        NumericScale = 255
         Precision = 255
         Size = 2147483647
         Value = Null
@@ -1793,13 +1805,15 @@ object DM: TDM
       item
         Name = 'EXTINFO'
         Attributes = [paNullable, paLong]
-        DataType = ftVarBytes
+        DataType = ftString
+        NumericScale = 255
         Precision = 255
         Size = 2147483647
         Value = Null
       end
       item
         Name = 'ID'
+        Attributes = [paSigned]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1807,7 +1821,7 @@ object DM: TDM
       end
       item
         Name = 'VERSTAMP'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1815,7 +1829,7 @@ object DM: TDM
       end
       item
         Name = 'PLACESTUDY'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1823,7 +1837,7 @@ object DM: TDM
       end
       item
         Name = 'FATHER'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1831,7 +1845,7 @@ object DM: TDM
       end
       item
         Name = 'MOTHER'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1839,7 +1853,7 @@ object DM: TDM
       end
       item
         Name = 'AREA'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1847,7 +1861,7 @@ object DM: TDM
       end
       item
         Name = 'SP133'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1855,6 +1869,7 @@ object DM: TDM
       end
       item
         Name = 'PARENTID'
+        Attributes = [paSigned]
         DataType = ftInteger
         Precision = 10
         Size = 4
@@ -1863,14 +1878,15 @@ object DM: TDM
       item
         Name = 'BIRTHDAY'
         Attributes = [paNullable]
-        DataType = ftDateTime
-        Precision = 10
-        Size = 6
+        DataType = ftWideString
+        NumericScale = 255
+        Precision = 255
+        Size = 10
         Value = Null
       end
       item
         Name = 'SEX'
-        Attributes = [paNullable]
+        Attributes = [paSigned, paNullable]
         DataType = ftInteger
         Precision = 10
         Size = 4

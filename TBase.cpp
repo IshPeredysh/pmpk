@@ -115,7 +115,7 @@ TBase::TBase(TADOQuery *q)
 int TBase::RemoveFromDB(TADOQuery *q)
 {
 	q->Parameters->ParamByName("id")->Value = this->ID;
-	return q->ExecSQL(); 
+	return q->ExecSQL();
 }
 
 int TBase::UpdateDB(TADOQuery *q)
@@ -135,10 +135,8 @@ int TBase::UpdateDB(TADOQuery *q)
 
 int TBase::InsertDB(TADOQuery *q)
 {
-
 	SetUpdateParams(q);
 	q->ExecSQL();
-
 	return 1;
 }
 
@@ -176,6 +174,7 @@ void TBase::Save(TADOQuery *qMax, TADOQuery *qInsert, TADOQuery *qUpdate, TADOQu
 		UpdateDB(qUpdate);
 	}
 }
+
 
 void TBase::SetBackUp()
 {

@@ -22,9 +22,9 @@ extern TTreeBaseEmptyList *OtherObjectList;
 
 int TChildren::SetThisUpdateParams(TADOQuery *q)
 {
-	TMemoryStream *sHistory = new TMemoryStream;
-	TMemoryStream *sExtInfo = new TMemoryStream;
-
+	//TMemoryStream *sHistory = new TMemoryStream;
+	//TMemoryStream *sExtInfo = new TMemoryStream;
+	//q->Parameters->ParseSQL(q->SQL->Text,true);
 	TTreeBase::SetThisUpdateParams(q);
 	q->Parameters->ParamByName("Birthday")->Value = FBirthday;
 	q->Parameters->ParamByName("PlaceStudy")->Value = IfNull(FPlaceStudy);
@@ -35,7 +35,10 @@ int TChildren::SetThisUpdateParams(TADOQuery *q)
 	q->Parameters->ParamByName("Adress")->Value = FAdress;
 	q->Parameters->ParamByName("Sex")->Value = FSex;
 
-	//History
+	q->Parameters->ParamByName("History")->Value = FHistory;
+	q->Parameters->ParamByName("ExtInfo")->Value = FExtInfo;
+
+	/*//History
 	sHistory->Clear();
 	sHistory->Write(FHistory.c_str(), FHistory.Length());
 	q->Parameters->ParamByName("History")->LoadFromStream(sHistory, ftBlob);
@@ -45,16 +48,34 @@ int TChildren::SetThisUpdateParams(TADOQuery *q)
 	sExtInfo->Clear();
 	sExtInfo->Write(FExtInfo.c_str(), FExtInfo.Length());
 	q->Parameters->ParamByName("ExtInfo")->LoadFromStream(sExtInfo, ftBlob);
-	sExtInfo->Free();
+	sExtInfo->Free(); */
 
 	return 1;
 }
 
+void TChildren::InitChildren()
+{
+	this->FBirthday = NULL;
+	this->FPlaceStudy = 0;
+	this->FFather = 0;
+	this->FMother = 0;
+	this->FArea = 0;
+	this->SP133 = 0;
+	this->FAdress = 0;
+	this->FHistory = "";
+	this->FExtInfo = "";
+	this->FSex = 0;
+}
+
+
+
 TChildren::TChildren(int VIsFolder, int VParentID, int MaxID):TTreeBase(VIsFolder, VParentID, MaxID)
 {
+    InitChildren();
+
 	FIsFolder = VIsFolder;
 	FParentID = VParentID;
-    FID = MaxID;
+	FID = MaxID;
 }
 
 TChildren::TChildren(TADOQuery *q):TTreeBase(q)
