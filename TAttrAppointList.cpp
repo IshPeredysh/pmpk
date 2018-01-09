@@ -17,12 +17,15 @@ void TAttrAppointList::AddFromDB(TADOQuery *q)
 
 TAttrAppoint* TAttrAppointList::ItemByID(int Value)
 {
-	return (TAttrAppoint*)this->ItemByID(Value);
+	return (TAttrAppoint*)TBaseList::ItemByID(Value);
 }
 
 TAttrAppoint* TAttrAppointList::ItemByDescr(String Value)
 {
-	return (TAttrAppoint*)((TBaseList*)this)->ItemByDescr(Value);
+	TAttrAppoint* p = NULL;
+
+	p = (TAttrAppoint*)TBaseList::ItemByDescr(Value);
+	return p;
 }
 
 #pragma package(smart_init)

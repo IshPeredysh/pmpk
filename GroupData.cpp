@@ -600,7 +600,8 @@ void __fastcall TGroupDataForm::SetAnchor(int Value)
 
 void __fastcall TGroupDataForm::AnchorButtonClick(TObject *Sender)
 {
-	TAttrAppoint* aa = NULL;
+	//TAttrAppoint* aa = NULL;
+	TAttrAppoint* aaItem = NULL;
 	String FieldName;
 	TTreeBase *Item;
 	TTreeNode *node;
@@ -623,21 +624,21 @@ void __fastcall TGroupDataForm::AnchorButtonClick(TObject *Sender)
     	return;
 
 	if (AddRichEdit != NULL) {
-		aa = AttrAppointList->ItemByDescr(AddRichEdit->FieldName);
+		aaItem = AttrAppointList->ItemByDescr(AddRichEdit->FieldName);
 		re = AddRichEdit;
 	}
 	else if (SetRichEdit != NULL) {
-		aa = AttrAppointList->ItemByDescr(SetRichEdit->FieldName);
+		aaItem = AttrAppointList->ItemByDescr(SetRichEdit->FieldName);
 		re = SetRichEdit;
 	}
 	else
-    	return;
+		return ;
 
-	if (aa == NULL)
+	if (aaItem == NULL)
 		return;
 	
-	aa->AnchorID = Item->ID;
-	aa->Save(NULL, NULL, DM->AttrAppointUpdateQuery, NULL);
+	aaItem->AnchorID = Item->ID;
+	aaItem->Save(NULL, NULL, DM->AttrAppointUpdateQuery, NULL);
 	re->AnchorID = Item->ID;
 	GroupDataList->SetAnchorID(Item->ID);
 	SetAnchor(Item->ID);

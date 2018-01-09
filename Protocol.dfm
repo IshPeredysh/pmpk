@@ -6360,8 +6360,7 @@ object ProtocolForm: TProtocolForm
                 3300333330F033333300333330F0333333003333300033333300333333333333
                 33003333333333333300}
               OnClick = SpeedButton6Click
-              ExplicitLeft = 1000
-              ExplicitTop = 1
+              ExplicitTop = 6
             end
             object RichEditSpec17: TRichEditSpec
               AlignWithMargins = True

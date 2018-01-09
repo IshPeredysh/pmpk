@@ -3,11 +3,9 @@ object DM: TDM
   Height = 1313
   Width = 1039
   object ADOConnection1: TADOConnection
-    Connected = True
     ConnectionString = 
       'Provider=SQLNCLI11.1;Persist Security Info=True;User ID=sa;Passw' +
-      'ord=sa; Initial Catalog=pmpk;Data Source=DESKTOP-AKQN7JJ\SQLEXPR' +
-      'ESS'
+      'ord=sa; Initial Catalog=pmpk;Data Source=(LocalDB)\MSSQLLocalDB'
     LoginPrompt = False
     Provider = 'SQLNCLI11.1'
     Left = 80
