@@ -31,6 +31,10 @@ object ProtocolForm: TProtocolForm
       Caption = #1048#1085#1092#1086#1088#1084#1072#1094#1080#1103' '#1086' '#1088#1077#1073#1105#1085#1082#1077
       Enabled = False
       ImageIndex = -1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object ScrollBox1: TScrollBox
         Left = 0
         Top = 0
@@ -71,11 +75,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 87
-              Height = 24
+              Height = 13
               Align = alLeft
               Caption = #1044#1072#1090#1072' '#1088#1086#1078#1076#1077#1085#1080#1103': '
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object DateTimePickerSpec2: TDateTimePickerSpec
               AlignWithMargins = True
@@ -108,11 +111,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 26
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1055#1086#1083': '
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec1: TComboBoxSpec
               AlignWithMargins = True
@@ -121,7 +123,7 @@ object ProtocolForm: TProtocolForm
               Width = 95
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1055#1086#1083'][5][4][104]'
               OnSelect = ComboBoxSpecSelect
@@ -425,20 +427,18 @@ object ProtocolForm: TProtocolForm
             Left = 198
             Top = 3
             Width = 123
-            Height = 24
+            Height = 13
             Align = alLeft
             Caption = #1056#1077#1075#1080#1089#1090#1088#1072#1094#1080#1086#1085#1085#1099#1081' '#1085#1086#1084#1077#1088
-            ExplicitHeight = 13
           end
           object Label1: TLabel
             AlignWithMargins = True
             Left = 3
             Top = 3
             Width = 101
-            Height = 24
+            Height = 13
             Align = alLeft
             Caption = #1044#1072#1090#1072' '#1086#1073#1089#1083#1077#1076#1086#1074#1072#1085#1080#1103
-            ExplicitHeight = 13
           end
           object EditSpec1: TEditSpec
             AlignWithMargins = True
@@ -528,22 +528,20 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 133
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1057#1086#1089#1090#1072#1074' '#1089#1077#1084#1100#1080', '#1089#1086#1094'. '#1089#1090#1072#1090#1091#1089
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object Label69: TLabel
               AlignWithMargins = True
               Left = 244
               Top = 4
               Width = 22
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1095#1077#1083'.'
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec29: TComboBoxSpec
               AlignWithMargins = True
@@ -552,7 +550,7 @@ object ProtocolForm: TProtocolForm
               Width = 158
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 1
               Text = '['#1057#1086#1094#1057#1090#1072#1090#1091#1089#1057#1077#1084#1100#1080'][5][4][134]'
               OnSelect = ComboBoxSpecSelect
@@ -688,11 +686,10 @@ object ProtocolForm: TProtocolForm
                 Left = 4
                 Top = 4
                 Width = 74
-                Height = 21
+                Height = 13
                 Align = alLeft
                 Caption = #1054#1073#1088#1072#1079#1086#1074#1072#1085#1080#1077': '
                 Layout = tlCenter
-                ExplicitHeight = 13
               end
               object ComboBoxSpec3: TComboBoxSpec
                 AlignWithMargins = True
@@ -701,7 +698,7 @@ object ProtocolForm: TProtocolForm
                 Width = 150
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 0
                 Text = '['#1054#1090#1077#1094#1054#1073#1088#1072#1079#1086#1074#1072#1085#1080#1077'][5][4][91]'
                 OnSelect = ComboBoxSpecSelect
@@ -762,11 +759,10 @@ object ProtocolForm: TProtocolForm
                 Left = 4
                 Top = 4
                 Width = 105
-                Height = 21
+                Height = 13
                 Align = alLeft
                 Caption = #1042#1088#1077#1076#1085#1099#1077' '#1087#1088#1080#1074#1099#1095#1082#1080': '
                 Layout = tlCenter
-                ExplicitHeight = 13
               end
               object ComboBoxSpec4: TComboBoxSpec
                 AlignWithMargins = True
@@ -775,7 +771,7 @@ object ProtocolForm: TProtocolForm
                 Width = 150
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 0
                 Text = '['#1054#1090#1077#1094#1042#1055'][5][4][99]'
                 OnSelect = ComboBoxSpecSelect
@@ -801,11 +797,10 @@ object ProtocolForm: TProtocolForm
                 Left = 4
                 Top = 4
                 Width = 174
-                Height = 21
+                Height = 13
                 Align = alLeft
                 Caption = #1054#1090#1103#1075#1086#1097#1105#1085#1085#1072#1103' '#1085#1072#1089#1083#1077#1076#1089#1090#1074#1077#1085#1085#1086#1089#1090#1100': '
                 Layout = tlCenter
-                ExplicitHeight = 13
               end
               object ComboBoxSpec5: TComboBoxSpec
                 AlignWithMargins = True
@@ -814,7 +809,7 @@ object ProtocolForm: TProtocolForm
                 Width = 150
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 0
                 Text = '['#1054#1090#1077#1094#1053#1072#1089#1083#1077#1076#1089#1090#1074#1077#1085#1085#1086#1089#1090#1100'][5][4][45]'
                 OnSelect = ComboBoxSpecSelect
@@ -849,11 +844,10 @@ object ProtocolForm: TProtocolForm
                 Left = 4
                 Top = 4
                 Width = 98
-                Height = 21
+                Height = 13
                 Align = alLeft
                 Caption = #1042#1088#1077#1076#1085#1099#1077' '#1087#1088#1080#1074#1099#1095#1082#1080
                 Layout = tlCenter
-                ExplicitHeight = 13
               end
               object ComboBoxSpec7: TComboBoxSpec
                 AlignWithMargins = True
@@ -862,7 +856,7 @@ object ProtocolForm: TProtocolForm
                 Width = 150
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 0
                 Text = '['#1052#1072#1090#1100#1042#1055'][5][4][99]'
                 OnSelect = ComboBoxSpecSelect
@@ -888,11 +882,10 @@ object ProtocolForm: TProtocolForm
                 Left = 4
                 Top = 4
                 Width = 67
-                Height = 21
+                Height = 13
                 Align = alLeft
                 Caption = #1054#1073#1088#1072#1079#1086#1074#1072#1085#1080#1077
                 Layout = tlCenter
-                ExplicitHeight = 13
               end
               object ComboBoxSpec6: TComboBoxSpec
                 AlignWithMargins = True
@@ -901,7 +894,7 @@ object ProtocolForm: TProtocolForm
                 Width = 150
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 0
                 Text = '['#1052#1072#1090#1100#1054#1073#1088#1072#1079#1086#1074#1072#1085#1080#1077'][5][4][91]'
                 OnSelect = ComboBoxSpecSelect
@@ -1050,11 +1043,10 @@ object ProtocolForm: TProtocolForm
                 Left = 4
                 Top = 4
                 Width = 167
-                Height = 22
+                Height = 13
                 Align = alLeft
                 Caption = #1054#1090#1103#1075#1086#1097#1105#1085#1085#1072#1103' '#1085#1072#1089#1083#1077#1076#1089#1090#1074#1077#1085#1085#1086#1089#1090#1100
                 Layout = tlCenter
-                ExplicitHeight = 13
               end
               object ComboBoxSpec8: TComboBoxSpec
                 AlignWithMargins = True
@@ -1063,7 +1055,7 @@ object ProtocolForm: TProtocolForm
                 Width = 150
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 0
                 Text = '['#1052#1072#1090#1100#1053#1072#1089#1083#1077#1076#1089#1090#1074#1077#1085#1085#1086#1089#1090#1100'][5][4][45]'
                 OnSelect = ComboBoxSpecSelect
@@ -1197,7 +1189,7 @@ object ProtocolForm: TProtocolForm
               Width = 170
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1055#1086#1089#1083#1077#1056#1086#1076#1076#1086#1084#1072'][5][4][127]'
               OnSelect = ComboBoxSpecSelect
@@ -1335,11 +1327,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 126
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1041#1077#1088#1077#1084#1077#1085#1085#1086#1089#1090#1100' ('#1087#1086' '#1089#1095#1105#1090#1091')'
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object EditSpec3: TEditSpec
               AlignWithMargins = True
@@ -1974,11 +1965,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 175
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1050#1077#1084' '#1085#1072#1087#1088#1072#1074#1083#1077#1085' '#1085#1072' '#1082#1086#1085#1089#1091#1083#1100#1090#1072#1094#1080#1102': '
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec2: TComboBoxSpec
               AlignWithMargins = True
@@ -1987,7 +1977,7 @@ object ProtocolForm: TProtocolForm
               Width = 168
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1050#1077#1084#1053#1072#1087#1088#1072#1074#1083#1077#1085'][5][4][27]'
               OnSelect = ComboBoxSpecSelect
@@ -2028,11 +2018,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 108
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1044#1072#1090#1072' '#1086#1073#1089#1083#1077#1076#1086#1074#1072#1085#1080#1103': '
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object DateTimePickerSpec3: TDateTimePickerSpec
               AlignWithMargins = True
@@ -2233,6 +2222,10 @@ object ProtocolForm: TProtocolForm
     object TabSheet1: TTabSheet
       Caption = #1054#1089#1084#1086#1088#1090' '#1085#1077#1074#1088#1086#1083#1086#1075#1072
       ImageIndex = -1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object ScrollBox2: TScrollBox
         Left = 0
         Top = 0
@@ -2407,7 +2400,7 @@ object ProtocolForm: TProtocolForm
                 Width = 165
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 0
                 Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1057#1091#1093#1086#1078#1042#1077#1088#1093'][5][1][64]'
                 OnSelect = ComboBoxSpecSelect
@@ -2462,7 +2455,7 @@ object ProtocolForm: TProtocolForm
                 Width = 165
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 0
                 Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1057#1091#1093#1086#1078#1053#1080#1079'][5][1][64]'
                 OnSelect = ComboBoxSpecSelect
@@ -2495,11 +2488,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 181
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1042#1077#1085#1086#1079#1085#1072#1103' '#1089#1077#1090#1100' '#1085#1072' '#1075#1086#1083#1086#1074#1077' '#1074#1099#1088#1072#1078#1077#1085#1072
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec10: TComboBoxSpec
               AlignWithMargins = True
@@ -2508,7 +2500,7 @@ object ProtocolForm: TProtocolForm
               Width = 144
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1042#1099#1088#1072#1078#1077#1085#1085#1072#1103#1042#1077#1085#1086#1079#1085#1072#1103#1057#1077#1090#1100'][5][1][45]'
               OnSelect = ComboBoxSpecSelect
@@ -2540,11 +2532,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 41
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1053#1080#1089#1090#1072#1075#1084
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec14: TComboBoxSpec
               AlignWithMargins = True
@@ -2553,7 +2544,7 @@ object ProtocolForm: TProtocolForm
               Width = 144
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1053#1080#1089#1090#1072#1075#1084'][5][1][45]'
               OnSelect = ComboBoxSpecSelect
@@ -2598,7 +2589,7 @@ object ProtocolForm: TProtocolForm
               Width = 144
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1044#1074#1080#1078#1077#1085#1080#1077#1043#1083#1072#1079#1085#1099#1093#1071#1073#1083#1086#1082'][5][1][48]'
               OnSelect = ComboBoxSpecSelect
@@ -2646,11 +2637,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 137
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1043#1083#1072#1079#1085#1099#1077' '#1097#1077#1083#1080' '#1089#1080#1084#1077#1090#1088#1080#1095#1085#1099
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec12: TComboBoxSpec
               AlignWithMargins = True
@@ -2659,7 +2649,7 @@ object ProtocolForm: TProtocolForm
               Width = 144
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1043#1083#1072#1079#1085#1099#1077#1065#1077#1083#1080#1057#1080#1084#1084#1077#1090#1088#1080#1095#1085#1099'][5][1][45]'
               OnSelect = ComboBoxSpecSelect
@@ -2691,11 +2681,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 100
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1047#1088#1072#1095#1082#1080' '#1089#1080#1084#1077#1090#1088#1080#1095#1085#1099
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec11: TComboBoxSpec
               AlignWithMargins = True
@@ -2704,7 +2693,7 @@ object ProtocolForm: TProtocolForm
               Width = 144
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1047#1088#1072#1095#1082#1080#1057#1080#1084#1084#1077#1090#1088#1080#1095#1085#1099'][5][1][45]'
               OnSelect = ComboBoxSpecSelect
@@ -2777,11 +2766,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 58
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1050#1086#1089#1086#1075#1083#1072#1079#1080#1077
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec15: TComboBoxSpec
               AlignWithMargins = True
@@ -2790,7 +2778,7 @@ object ProtocolForm: TProtocolForm
               Width = 144
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1050#1086#1089#1086#1075#1083#1072#1079#1080#1077'][5][1][45]'
               OnSelect = ComboBoxSpecSelect
@@ -2887,7 +2875,7 @@ object ProtocolForm: TProtocolForm
               Width = 145
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1050#1086#1085#1074#1077#1088#1075#1077#1085#1094#1080#1103'][5][1][52]'
               OnSelect = ComboBoxSpecSelect
@@ -3000,11 +2988,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 99
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1051#1080#1094#1086' '#1089#1080#1084#1084#1077#1090#1088#1080#1095#1085#1086#1077
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec17: TComboBoxSpec
               AlignWithMargins = True
@@ -3013,7 +3000,7 @@ object ProtocolForm: TProtocolForm
               Width = 150
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1051#1080#1094#1086#1057#1080#1084#1084#1077#1090#1088#1080#1095#1085#1086#1077'][5][1][45]'
               OnSelect = ComboBoxSpecSelect
@@ -3219,7 +3206,7 @@ object ProtocolForm: TProtocolForm
               Width = 160
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1058#1086#1085#1091#1089'][5][1][56]'
               OnSelect = ComboBoxSpecSelect
@@ -3251,10 +3238,9 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 51
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1044#1080#1089#1092#1086#1085#1080#1103
-              ExplicitHeight = 13
             end
             object ComboBoxSpec20: TComboBoxSpec
               AlignWithMargins = True
@@ -3263,7 +3249,7 @@ object ProtocolForm: TProtocolForm
               Width = 150
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1044#1080#1089#1092#1086#1085#1080#1103'][5][1][45]'
               OnSelect = ComboBoxSpecSelect
@@ -3295,11 +3281,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 50
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1044#1080#1089#1092#1072#1075#1080#1103
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec19: TComboBoxSpec
               AlignWithMargins = True
@@ -3308,7 +3293,7 @@ object ProtocolForm: TProtocolForm
               Width = 150
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1044#1080#1089#1092#1072#1075#1080#1103'][5][1][45]'
               OnSelect = ComboBoxSpecSelect
@@ -3465,7 +3450,7 @@ object ProtocolForm: TProtocolForm
               Width = 144
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1054#1088#1072#1083#1100#1085#1099#1077#1040#1074#1090#1086#1084#1072#1090#1080#1079#1084#1099'][5][1][45]'
               OnSelect = ComboBoxSpecSelect
@@ -3784,7 +3769,7 @@ object ProtocolForm: TProtocolForm
             Width = 145
             Height = 21
             Align = alLeft
-            ItemHeight = 13
+            ItemHeight = 0
             TabOrder = 0
             Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1055#1053#1055'][5][1][73]'
             OnSelect = ComboBoxSpecSelect
@@ -3810,11 +3795,10 @@ object ProtocolForm: TProtocolForm
             Left = 4
             Top = 4
             Width = 132
-            Height = 21
+            Height = 13
             Align = alLeft
             Caption = #1042' '#1087#1086#1079#1077' '#1056#1086#1084#1073#1077#1088#1075#1072' '#1091#1089#1090#1086#1081#1095#1080#1074
             Layout = tlCenter
-            ExplicitHeight = 13
           end
           object ComboBoxSpec23: TComboBoxSpec
             AlignWithMargins = True
@@ -3823,7 +3807,7 @@ object ProtocolForm: TProtocolForm
             Width = 150
             Height = 21
             Align = alLeft
-            ItemHeight = 13
+            ItemHeight = 0
             TabOrder = 0
             Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1056#1086#1084#1073#1077#1088#1075'][5][1][45]'
             OnSelect = ComboBoxSpecSelect
@@ -3849,11 +3833,10 @@ object ProtocolForm: TProtocolForm
             Left = 4
             Top = 4
             Width = 95
-            Height = 21
+            Height = 13
             Align = alLeft
             Caption = #1063#1091#1074#1089#1090#1074#1080#1090#1077#1083#1100#1085#1086#1089#1090#1100
             Layout = tlCenter
-            ExplicitHeight = 13
           end
           object ComboBoxSpec22: TComboBoxSpec
             AlignWithMargins = True
@@ -3862,7 +3845,7 @@ object ProtocolForm: TProtocolForm
             Width = 150
             Height = 21
             Align = alLeft
-            ItemHeight = 13
+            ItemHeight = 0
             TabOrder = 0
             Text = '['#1053#1077#1074#1088#1086#1083#1086#1075#1063#1091#1074#1089#1090#1074#1080#1090#1077#1083#1100#1085#1086#1089#1090#1100'][5][1][69]'
             OnSelect = ComboBoxSpecSelect
@@ -3881,6 +3864,10 @@ object ProtocolForm: TProtocolForm
     object TabSheet2: TTabSheet
       Caption = #1054#1089#1084#1086#1090#1088' '#1087#1089#1080#1093#1080#1072#1090#1088#1072
       ImageIndex = -1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object ScrollBox4: TScrollBox
         Left = 0
         Top = 0
@@ -4380,6 +4367,10 @@ object ProtocolForm: TProtocolForm
     object TabSheet3: TTabSheet
       Caption = #1055#1089#1080#1093#1086#1083#1086#1075#1080#1095#1077#1089#1082#1086#1077' '#1086#1073#1089#1083#1077#1076#1086#1074#1072#1085#1080#1077
       ImageIndex = -1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object ScrollBox7: TScrollBox
         Left = 0
         Top = 0
@@ -4652,6 +4643,10 @@ object ProtocolForm: TProtocolForm
     object TabSheet4: TTabSheet
       Caption = #1051#1086#1075#1086#1087#1077#1076#1080#1095#1077#1089#1082#1086#1077' '#1086#1073#1089#1083#1077#1076#1086#1074#1072#1085#1080#1077
       ImageIndex = -1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object ScrollBox6: TScrollBox
         Left = 0
         Top = 0
@@ -5477,6 +5472,10 @@ object ProtocolForm: TProtocolForm
     object TabSheet5: TTabSheet
       Caption = #1055#1077#1076#1072#1075#1086#1075#1080#1095#1077#1089#1082#1086#1077' '#1086#1073#1089#1083#1077#1076#1086#1074#1072#1085#1080#1077
       ImageIndex = -1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object ScrollBox5: TScrollBox
         Left = 0
         Top = 0
@@ -6272,7 +6271,7 @@ object ProtocolForm: TProtocolForm
               Width = 145
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1044#1077#1092#1077#1082#1090#1086#1083#1086#1075#1055#1086#1056#1077#1079#1091#1083#1100#1090#1072#1090#1072#1084'][5][3][170]'
               OnSelect = ComboBoxSpecSelect
@@ -6298,11 +6297,10 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 121
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1042#1099#1103#1074#1083#1077#1085#1099' '#1090#1088#1091#1076#1085#1086#1089#1090#1080' '#1074' '
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec30: TComboBoxSpec
               AlignWithMargins = True
@@ -6311,7 +6309,7 @@ object ProtocolForm: TProtocolForm
               Width = 135
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1044#1077#1092#1077#1082#1090#1086#1083#1086#1075#1042#1099#1103#1074#1083#1077#1085#1099#1058#1088#1091#1076#1085#1086#1089#1090#1080'][5][3][174]'
               OnSelect = ComboBoxSpecSelect
@@ -6403,22 +6401,20 @@ object ProtocolForm: TProtocolForm
               Left = 4
               Top = 4
               Width = 62
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1054#1073#1091#1095#1077#1085#1080#1077' '#1074' '
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object Label129: TLabel
               AlignWithMargins = True
               Left = 131
               Top = 4
               Width = 211
-              Height = 21
+              Height = 13
               Align = alLeft
               Caption = #1082#1083#1072#1089#1089#1077' '#1086#1073#1088#1072#1079#1086#1074#1072#1090#1077#1083#1100#1085#1086#1081' '#1086#1088#1075#1072#1085#1080#1079#1072#1094#1080#1080' '#1087#1086' '
               Layout = tlCenter
-              ExplicitHeight = 13
             end
             object ComboBoxSpec32: TComboBoxSpec
               AlignWithMargins = True
@@ -6427,7 +6423,7 @@ object ProtocolForm: TProtocolForm
               Width = 53
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 0
               Text = '['#1044#1077#1092#1077#1082#1090#1086#1083#1086#1075#1050#1083#1072#1089#1089'][5][3][177]'
               OnSelect = ComboBoxSpecSelect
@@ -6447,7 +6443,7 @@ object ProtocolForm: TProtocolForm
               Width = 321
               Height = 21
               Align = alLeft
-              ItemHeight = 13
+              ItemHeight = 0
               TabOrder = 1
               Text = '['#1044#1077#1092#1077#1082#1090#1086#1083#1086#1075#1055#1086#1055#1088#1086#1075#1088#1072#1084#1084#1077'][5][3][189]'
               OnSelect = ComboBoxSpecSelect
@@ -6580,6 +6576,10 @@ object ProtocolForm: TProtocolForm
     object TabSheet6: TTabSheet
       Caption = #1050#1086#1083#1083#1077#1075#1080#1072#1083#1100#1085#1086#1077' '#1079#1072#1082#1083#1102#1095#1077#1085#1080#1077
       ImageIndex = -1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object ScrollBox3: TScrollBox
         Left = 0
         Top = 0
@@ -6709,7 +6709,7 @@ object ProtocolForm: TProtocolForm
                 Width = 163
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 2
                 Text = '['#1042#1080#1076#1055#1088#1086#1075#1088#1072#1084#1084#1099'][5][7][107]'
                 OnChange = RichEditModify
@@ -6893,22 +6893,20 @@ object ProtocolForm: TProtocolForm
                 Left = 4
                 Top = 4
                 Width = 81
-                Height = 21
+                Height = 13
                 Align = alLeft
                 Caption = #1056#1077#1072#1073#1080#1083#1080#1090#1072#1094#1080#1103' '#1074
                 Layout = tlCenter
-                ExplicitHeight = 13
               end
               object Label116: TLabel
                 AlignWithMargins = True
                 Left = 335
                 Top = 4
                 Width = 109
-                Height = 21
+                Height = 13
                 Align = alLeft
                 Caption = #1089#1080#1089#1090#1077#1084#1099' '#1089#1086#1094'. '#1079#1072#1097#1080#1090#1099
                 Layout = tlCenter
-                ExplicitHeight = 13
               end
               object ComboBoxSpec26: TComboBoxSpec
                 AlignWithMargins = True
@@ -6917,7 +6915,7 @@ object ProtocolForm: TProtocolForm
                 Width = 238
                 Height = 21
                 Align = alLeft
-                ItemHeight = 13
+                ItemHeight = 0
                 TabOrder = 0
                 Text = '['#1042#1080#1076#1059#1095#1088#1077#1078#1076#1077#1085#1080#1103#1056#1077#1072#1073#1080#1083#1080#1090#1072#1094#1080#1080'][5][7][168]'
                 OnSelect = ComboBoxSpecSelect
@@ -7236,7 +7234,7 @@ object ProtocolForm: TProtocolForm
         Width = 145
         Height = 21
         Style = csDropDownList
-        ItemHeight = 13
+        ItemHeight = 0
         TabOrder = 0
         OnSelect = AppointBoxSelect
       end

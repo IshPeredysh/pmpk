@@ -2891,7 +2891,7 @@ void TProtocolForm::LoadINI()
 	TStringList *list = new TStringList;
 
 	file->ReadSectionValues("Protocol", list);
-	ComboBox1->ItemIndex = file->ReadInteger("Protocol", "Insight", 0);
+	ComboBox1->ItemIndex = file->ReadInteger("Protocol", "Insight", 2);
 	AppointBox->ItemIndex = file->ReadInteger("Protocol", "Appointment", 0);
 
 	delete file, list;
